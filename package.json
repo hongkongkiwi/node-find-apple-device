@@ -1,7 +1,7 @@
 {
   "name": "find-apple-device",
   "version": "1.0.0",
-  "description": "A Node module to trigger the 'Find My iPhone' feature from iCloud, to play a sound on the phone",
+  "description": "Unofficial API to use 'Find my Phone' functionality within Node.js. Supports alerts, device & location info, locking phone and remote erase.",
   "main": "index.js",
   "scripts": {
     "test": "mocha"
