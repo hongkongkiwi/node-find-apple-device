@@ -10,6 +10,7 @@ var debugM = require('debug')('icloud:methods');
 var ICloud = function(username, password, options) {
   debugM("-> new ICloud()");
   this.options = _.extendOwn({
+    credentialsFile: __dirname + '/.credentials.json',
     cookieFile: __dirname + '/cookies.json',
     timeZone: require('system-timezone')() || 'US/Eastern',
     appName: "iCloud Find (Web)",
@@ -24,8 +25,25 @@ var ICloud = function(username, password, options) {
     },
   }, options);
 
-  this.username = username;
-  this.password = password;
+  var self = this;
+
+  if (username && password) {
+    this.username = username;
+    this.password = password;
+  } else if (this.options.credentialsFile) {
+    try {
+      fs.lstatSync(self.options.credentialsFile);
+      debug("Found credentials file!", self.options.credentialsFile);
+      var credentials = require(self.options.credentialsFile) || {};
+      self.username = credentials.username;
+      self.password = credentials.password;
+      console.log(credentials);
+    } catch (e) {
+      console.error(e);
+    }
+  }
+
+  if (!this.username || !this.password) throw new Error("Must have username & password!");
 
   var stats = false;
   try {

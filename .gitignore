@@ -2,6 +2,7 @@
 .cache
 .npm
 .npmcache
+.credentials.json
 .pass
 node_modules
 cookies.json
