@@ -1,0 +1,42 @@
+{
+  "name": "find-apple-device",
+  "version": "1.0.0",
+  "description": "A Node module to trigger the 'Find My iPhone' feature from iCloud, to play a sound on the phone",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hongkongkiwi/node-find-apple-device.git"
+  },
+  "keywords": [
+    "apple",
+    "icloud",
+    "presence",
+    "location",
+    "find",
+    "iphone",
+    "ipad",
+    "macos",
+    "osx"
+  ],
+  "author": "Andy Savage <andy@savage.hk> (http://andy.savage.hk)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hongkongkiwi/node-find-apple-device/issues"
+  },
+  "homepage": "https://github.com/hongkongkiwi/node-find-apple-device#readme",
+  "dependencies": {
+    "debug": "^2.2.0",
+    "phone": "^1.0.7",
+    "random-useragent": "^0.3.0",
+    "request": "^2.72.0",
+    "system-timezone": "0.0.3",
+    "tough-cookie-filestore": "0.0.1",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0"
+  }
+}
