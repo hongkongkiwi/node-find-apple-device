@@ -61,25 +61,25 @@ Gives this json object (some data has been faked for privacy)
 
 ```json
 {
-  id: '0c0fc335a3b69c8fd42fdb3a3+6ee64f9da0c0fc335+a3b69c8fd42fdb3a36ea61475e64f9da',
-  name: 'My iPhone',
-  deviceModel: 'iphone6splus-abcde-efghi',
-  modelDisplayName: 'iPhone',
-  deviceDisplayName: 'iPhone 6s Plus',
-  batteryLevel: 0.67,
-  isLocating: true,
-  lostModeCapable: true,
-  location:
+  "id": "0c0fc335a3b69c8fd42fdb3a3+6ee64f9da0c0fc335+a3b69c8fd42fdb3a36ea61475e64f9da",
+  "name": "My iPhone",
+  "deviceModel": "iphone6splus-abcde-efghi",
+  "modelDisplayName": "iPhone",
+  "deviceDisplayName": "iPhone 6s Plus",
+  "batteryLevel": "0.67",
+  "isLocating": true,
+  "lostModeCapable": true,
+  "location":
    {
-     timeStamp: 1465896490086,
-     isOld: false,
-     isInaccurate: false,
-     locationFinished: false,
-     positionType: 'Cell',
-     latitude: 12.123456938235353,
-     horizontalAccuracy: 1414,
-     locationType: null,
-     longitude: 22.125933956343
+     "timeStamp": 1465896490086,
+     "isOld": false,
+     "isInaccurate": false,
+     "locationFinished": false,
+     "positionType": "Cell",
+     "latitude": "12.123456938235353",
+     "horizontalAccuracy": 1414,
+     "locationType": null,
+     "longitude": "22.125933956343"
    }
 }
 ```
