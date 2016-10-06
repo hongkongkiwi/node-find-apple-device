@@ -1,7 +1,7 @@
 var ICloud = require('../index');
 
-var email = "you@example.com";
-var password = "PASSWORD_GOES_HERE!";
+var email = "<EMAIL GOES HERE>";
+var password = "<PASSWORD GOES HERE>";
 
 var iCloud = new ICloud(email, password);
 
