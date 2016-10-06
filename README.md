@@ -42,7 +42,8 @@ iCloud.getDevices(function(err, devices) {
 * silentLostDevice(deviceId, emailUpdates, callback)
 * lostDevice(deviceId, callNumber, text, emailUpdates, callback)
 * alertDevice(deviceId, subject, callback)
-
+* getReminders(collectionname,callback)
+* addReminders(reminder,callback)
 
 
 ## Example data
