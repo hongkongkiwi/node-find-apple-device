@@ -29,6 +29,7 @@
   "homepage": "https://github.com/hongkongkiwi/node-find-apple-device#readme",
   "dependencies": {
     "debug": "^2.2.0",
+    "node-uuid": "^1.4.7",
     "phone": "^1.0.7",
     "random-useragent": "^0.3.0",
     "request": "^2.72.0",
